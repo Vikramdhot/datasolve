@@ -7,7 +7,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <!-- App css-->
 <link rel="stylesheet" type="text/css" href="/../assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/custom.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+   <!-- Responsive css-->
+   <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -328,7 +332,7 @@
                             </div>
 
                             <div class="card-body">
-                                <div class="table-responsive theme-scrollbar">
+                                <div class="table-responsive theme-scrollbar employee_nt">
                                     <table class="display" id="basic21">
                                         <thead>
                                         <tr>
@@ -692,11 +696,11 @@
                 <div class="row">
                     <!-- Zero Configuration  Starts-->
                     <div class="col-sm-12">
-                        <h4 class="">All Assign Client List</h2>
+                        <h4 class="all_client">All Assign Client List</h2>
                         <div class="card">
                             <div class="card-header pb-0">
                  <div class="card-body">
-                                <div class="table-responsive theme-scrollbar">
+                                <div class="table-responsive theme-scrollbar employee_nt">
                                                             <table class="display tb" id="basic21no">
     <thead>
         <tr>

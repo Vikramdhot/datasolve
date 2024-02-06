@@ -1,38 +1,4 @@
-@include('admin/includes.header');
-
-<link rel="stylesheet" type="text/css" href="/../assets/css/vendors/scrollbar.css">
-<link rel="stylesheet" type="text/css" href="/../assets/css/vendors/datatables.css">
-<link rel="stylesheet" type="text/css" href="/../assets/css/vendors/sweetalert2.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<!-- App css-->
-<link rel="stylesheet" type="text/css" href="/../assets/css/style.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-notify/0.2.0/css/bootstrap-notify.min.css">
-<style>
- td{
-        font-weight:500;
-    }
-    </style>
-
-
-<script src="https://code.jquery.com/jquery-1.12.3.js"></script>
-
-<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-
-<script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
-
-<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
-
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
-
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
-
-<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css">
-</head>
-<body>
+@extends('admin.includes.issuetracker') @section('content')
 <!-- tap on top starts-->
 <div class="tap-top"><i data-feather="chevrons-up"></i></div>
 <!-- tap on tap ends-->
@@ -214,13 +180,12 @@
                         <div class="card">
                             <div class="card-header pb-0">
                                 <h4 class="pull-left">All Issues</h4>
-
-
-
                             </div>
 
                             <div class="card-body">
-                                <div class="table-responsive theme-scrollbar">
+                            <div class="all_issuwrap">
+                                <div class="table-responsive theme-scrollbar all-issue">
+                                 
                                     <table class="display" id="basic41">
                                         <thead>
                                         <tr>
@@ -266,16 +231,11 @@
 
                                         </tbody>
                                     </table>
+                                   </div>
                                     <script>
                                         $(document).ready( function() {
     $('#basic41').DataTable( {
         dom: 'Bfrtip',
-
-
-
-        
-          
-
         buttons: [
             {
                 extend: 'collection',
@@ -369,47 +329,9 @@
         @include('user/includes.footer');
     </div>
 </div>
-<!-- latest jquery-->
-<!-- <script src="/../assets/js/jquery-3.6.0.min.js"></script> -->
-<!-- Bootstrap js-->
-<script src="/../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-<!-- feather icon js-->
-<script src="/../assets/js/icons/feather-icon/feather.min.js"></script>
-<script src="/../assets/js/icons/feather-icon/feather-icon.js"></script>
-<!-- scrollbar js-->
-<script src="/../assets/js/scrollbar/simplebar.js"></script>
-<script src="/../assets/js/scrollbar/custom.js"></script>
-<!-- Sidebar jquery-->
-<script src="/../assets/js/config.js"></script>
-<script src="/../assets/js/sidebar-menu.js"></script>
-<!-- <script src="/../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
-<script src="/../assets/js/datatable/datatables/datatable.custom.js"></script> -->
-<!--<script src="/../assets/js/tooltip-init.js"></script>-->
 
-<script src="/../assets/js/notify/bootstrap-notify.min.js"></script>
-<script src="/../assets/js/notify/notify-script.js"></script>
-
-
-<script src="/../assets/js/sweet-alert/sweetalert.min.js"></script>
-<script src="/../assets/js/sweet-alert/app.js"></script>
-<!-- Template js-->
-<script src="/../assets/js/script.js"></script>
-<script src="/../assets/js/theme-customizer/customizer.js">  </script>
-
-<link rel="stylesheet" type="text/css" href="https://dobtco.github.io/jquery-resizable-columns/dist/jquery.resizableColumns.css">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/store.js/1.3.14/store.min.js"></script>
-<script src="https://dobtco.github.io/jquery-resizable-columns/dist/jquery.resizableColumns.js"></script>
-<script>
-    $(function() {
-  
-  $("table").resizableColumns({
-    store: window.store
-  });
-});
-</script>
 <style>
-    table{
+    /* table{
   table-layout: fixed;
   td, th{
     overflow: hidden;
@@ -419,7 +341,7 @@
         -o-text-overflow: ellipsis;
            text-overflow: ellipsis;
   }
-}
+} */
 div.dt-button-collection {
     position: absolute;
     top: 0;
@@ -452,6 +374,6 @@ a.dt-button.buttons-collection {
 }
 </style>
 <!-- login js-->
-</body>
 
-</html>
+@endsection
+

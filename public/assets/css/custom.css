@@ -1,0 +1,89 @@
+/* header css start */
+.page-wrapper .page-header .header-wrapper .nav-right>ul {
+    margin: 0;
+}
+/* header css end */
+
+/* admin announcement css start */
+.display.bbb {
+    width: 100%;
+}
+nav.sidebar-main .sidebar-link {
+    text-decoration: none;
+}
+/* media start*/
+@media(max-width:768px)
+{
+    .display.bbb .action {
+        justify-content: center;
+    }
+    
+    .display.bbb th:last-child {
+        justify-content: center;
+        display: flex;
+    }
+}
+/* admin announcement css end */
+
+/* calender css start */
+.calendar-default .fc-header-toolbar.fc-toolbar .fc-today-button {
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+/* employee css start */
+button.delete-button {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+h4.all_client {
+    font-size: 20px;
+    padding: 10px;
+}
+/* employee css end */
+
+/* media start */
+@media(max-width:1184px)
+{
+    footer.footer {
+        margin: 0;
+    }
+}
+/* calender css end */
+
+/* open issue tracker css start */
+@media(max-width:640px)
+{
+.all-issue .dt-buttons {
+    text-align: left;
+}
+.all-issue .dataTables_filter {
+    text-align: left !important;
+    margin-top: 5px;
+}
+/* timesheet code start*/
+.timesheetdata .dt-buttons {
+    text-align: left;
+}
+
+.timesheetdata .dataTables_filter {
+    text-align: left !important;
+    margin-top: 5px;
+}
+/* timesheet code end*/
+
+/* employee css start */
+.employee_nt .dt-buttons {
+    text-align: left;
+}
+
+.employee_nt .dataTables_filter {
+    text-align: left !important;
+    margin-top: 5px;
+}
+
+}
+/* open issue tracker css end */
+
+
+
